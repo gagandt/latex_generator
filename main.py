@@ -4,7 +4,7 @@ from performance_parameters import print_per_para
 
 
 
-M = [[1,2,3],[2,3,4],[3,4,5]]
+M[0] = [[1,2,3],[2,3,4],[3,4,5]]
 
 print_conf_mat(M)
-#print_per_para(M)
+print_per_para(M)

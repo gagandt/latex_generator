@@ -16,7 +16,7 @@ def print_per_para(M):
     
     print('\\begin{table}[h!]')
     print('\\begin{center}')
-    print('\\caption{ }')
+    print('\\caption{ Precision Recall and F-Measure for above confusion matrix.}')
     print('\\label{tab:table1}')
     print('\\begin{tabular}{l|c|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between')
     print('\\textbf{class} & \\textbf{Recall} & \\textbf{Precision} & \\textbf{F-Measure}\\\\')
@@ -27,5 +27,6 @@ def print_per_para(M):
     print('\\end{tabular}')
     print('\\end{center}')
     print('\\end{table}')
-    print('$\\mathbf{Accuracy}$ '+ str(round(float(M[0][0] + M[1][1] + M[2][2])/float(hsum[1] + hsum[2] + hsum[0]),2))+ '$\\%,$ $\\mathbf{Mean -Precision}$ ' + str(round((p[0] + p[1] + p[2])/3.0,2)) + '$,$ $\\mathbf{Mean -Recall}$ ' + str(round((r[0] + r[1] + r[2])/3.0,2))  + '$.$\\')
+    print('')
+    print('\quad\quad\quad\quad\quad$\\mathbf{Accuracy}$ '+ str(round(float(M[0][0] + M[1][1] + M[2][2])/float(hsum[1] + hsum[2] + hsum[0]),2)*100)+ '$\\%,$ $\\mathbf{Mean -Precision}$ ' + str(round((p[0] + p[1] + p[2])/3.0,2)) + '$,$ $\\mathbf{Mean -Recall}$ ' + str(round((r[0] + r[1] + r[2])/3.0,2))  + '$.$\\')
  
